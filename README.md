@@ -15,6 +15,8 @@ demo code that shows:
  * `go get golang.org/x/oauth2`
  * `go get golang.org/x/oauth2/jwt`
  * `go get google.golang.org/api/analytics/v3`
-* download analyticsdumper.go
-* edit analyticsdumper.go
- * change vars in code to values from your client secrets JSON file
+* download `analyticsdumper.go`
+* edit `analyticsdumper.go`
+ * change `ga*` vars in code as noted in comments to values from your client secrets JSON file
+* `go build analyticsdumper.go && ./analyticsdumper`
+* profit!
