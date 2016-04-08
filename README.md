@@ -8,7 +8,7 @@ demo code that shows:
 
 ##### HOW-TO
 * install required libraries
-* * `$ go get -u golang.org/x/oauth2 golang.org/x/oauth2/jwt google.golang.org/api/analytics/v3`
+** `$ go get -u golang.org/x/oauth2 golang.org/x/oauth2/jwt google.golang.org/api/analytics/v3`
 * download analyticsdumper.go
 * edit analyticsdumper.go
 * 
