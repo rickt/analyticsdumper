@@ -21,6 +21,5 @@ demo code that shows:
 * `go build analyticsdumper.go && ./analyticsdumper`
 * profit!
 * example run output:
-* 
 ```$ go build analyticsdumper.go && ./analyticsdumper
 [1399856] pageviews for www.redacted.com (UA-redacted-1) from 2016-04-06 to 2016-04-07.```
