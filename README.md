@@ -8,7 +8,7 @@ analyticsdumper is very simple demo code that shows:
 
 ##### HOW-TO
 * create a new app in the Google Cloud Console
- * see http://code.rickt.org/2014/03/how-to-download-google-analytics-data.html
+ * see http://code.rickt.org/post/142452087425/how-to-download-google-analytics-data-with-golang
   * get your app's private key from the Google Cloud Console
   * get your app's client secrets JSON file from the Google Cloud Console
 * install required Go libraries
