@@ -3,7 +3,7 @@ Go code that queries GA data via the Google Core Reporting API using two-legged 
 
 ##### overview
 analyticsdumper is very simple demo code that shows:
-* service account authentication with a Google API in Go
+* service account OAuth2 authentication with a Google API in Go
 * how to pull pageview count from last 24 hours via Core Reporting API in Go
 
 ##### HOW-TO
