@@ -20,7 +20,6 @@ var (
 	enddate   string = time.Now().Format(datelayout)                          // set end query date to today
 	startdate string = time.Now().Add(time.Hour * 24 * -1).Format(datelayout) // set start query date to yesterday
 	metric    string = "ga:pageviews"                                         // GA metric that we want
-	scope     string = "https://www.googleapis.com/auth/analytics.readonly"   // GA API scope
 	tokenurl  string = "https://accounts.google.com/o/oauth2/token"           // (json:"token_uri") Google oauth2 Token URL
 )
 
@@ -41,7 +40,7 @@ var (
 var (
 	// CHANGE THESE!!!
 	gaServiceAcctEmail  string = "blahblahblahblah@developer.gserviceaccount.com" // (json:"client_email") email address of registered application
-	gaServiceAcctPEMKey string = "/tmp/analyticsdumper.pem"                       // full path to private key file (PEM format) of your application from Google Cloud Console
+	gaServiceAcctPEMKey string = "./analyticsdumper.pem"                          // full path to private key file (PEM format) of your application from Google Cloud Console
 	gaTableID           string = "ga:NNNNNNNN"                                    // namespaced profile (table) ID of your analytics account/property/profile
 )
 
@@ -58,7 +57,7 @@ func main() {
 	jwtc := jwt.Config{
 		Email:      gaServiceAcctEmail,
 		PrivateKey: pk,
-		Scopes:     []string{scope},
+		Scopes:     []string{analytics.AnalyticsReadonlyScope},
 		TokenURL:   tokenurl,
 	}
 	// create our authenticated http client using the jwt.Config we just created
